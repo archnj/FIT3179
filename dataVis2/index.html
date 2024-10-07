@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Data Vis Testing </title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+</head>
+
+<body>
+    <h1> Graph 1: Bar Chart</h1>
+    <div id="vis1"></div>
+    <script> 
+        vegaEmbed("#vis1", "barChart.json").then(result => {
+            console.log("Graph 1 loaded"); 
+        }).catch(consile.error);
+
+    </script>
+</body>
+
+</html>

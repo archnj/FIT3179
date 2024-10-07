@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart",
+    "data": {
+      "url": "Aus_Agricultural_Commodities.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "State", "type": "nominal"},
+      "y": {"field": "Value ($m)", "type": "quantitative"}
+    }
+  }
+  
+  
