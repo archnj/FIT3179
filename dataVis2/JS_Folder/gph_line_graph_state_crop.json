@@ -16,7 +16,6 @@
       },
       "y": {
         "field":"Crop_Value", 
-        "aggregate": "mean", 
         "type": "quantitative"
       },
       "color": {
