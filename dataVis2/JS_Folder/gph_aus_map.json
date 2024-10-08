@@ -19,7 +19,7 @@
                  "title": "State Name"
              }, 
              {
-                 "field": "Value ($m)", 
+                 "field": "Total_Value", 
                  "type": "quantitative", 
                  "title": "Value (in Millions of Dollars)"
              }
@@ -39,11 +39,11 @@
                      "lookup": "properties.STE_NAME16", 
                      "from":{
                          "data": {
-                             "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Aus_Agricultural_Commodities.csv"
+                             "url":  "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/cropAndLivestock.csv"
                          },
                          "key": "State", 
                          "fields": [
-                             "Value ($m)"
+                             "Total_Value"
                          ]
                      }
                  }
@@ -53,14 +53,14 @@
              },
              "encoding": {
                  "color": {
-                     "field": "Value ($m)",
+                     "field": "Total_Value",
                      "type": "quantitative", 
                      "title": [
                          "Value (in Millions of Dollars)"
                      ], 
                      "scale": {
                          "type" :"threshold", 
-                         "domain": [10, 14, 18, 22], 
+                         "domain": [2500, 5000, 7500, 10000], 
                          "range": ["#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5"]
                      }, 
                      "legend": {
