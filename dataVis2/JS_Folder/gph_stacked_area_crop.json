@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+
+    "data": {
+        "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Aus_Agricultural_Commodities.csv"
+    }, 
+    "mark": "area", 
+    "encoding": {
+        "x": {
+            "timeUnit": "year", "field": "Date"
+        }, 
+        "y": {
+            "aggregate": "sum", "field": "Value ($m)"
+        }, 
+        "color": {
+            "field": "Commodity", 
+            "scale": {"scheme": "category10"}
+        }
+    }
+}

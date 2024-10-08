@@ -16,6 +16,9 @@
     "transform": [
       {
         "filter": "state_selection == null || datum.State == state_selection"
+      },
+      {
+        "filter": "datum.Type == 'Crops'"
       }
     ],
     "mark": "rect",

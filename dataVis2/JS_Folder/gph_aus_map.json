@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
+     "title": "My Map", 
+     "width": 800, 
+     "height": 400, 
+     "projection": {"type": "mercator"},
+     "data": {
+         "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/JS_Folder/STE_2016_AUST.json",
+         "format": {
+             "type": "topojson", 
+             "feature": "STE_2016_AUST"
+         }
+     },
+     "encoding": {
+         "tooltip": [
+             {
+                 "field": "properties.STE_NAME16", 
+                 "type": "nominal", 
+                 "title": "State Name"
+             }, 
+             {
+                 "field": "Value ($m)", 
+                 "type": "quantitative", 
+                 "title": "Value (in Millions of Dollars)"
+             }
+         ]
+     }, 
+     "layer": [
+         {
+             "mark": {
+                 "type": "geoshape", 
+                 "fill": "gainsboro", 
+                 "stroke": "white"
+             }
+         }, 
+         {
+             "transform": [
+                 {
+                     "lookup": "properties.STE_NAME16", 
+                     "from":{
+                         "data": {
+                             "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Aus_Agricultural_Commodities.csv"
+                         },
+                         "key": "State", 
+                         "fields": [
+                             "Value ($m)"
+                         ]
+                     }
+                 }
+             ], 
+             "mark": {
+                 "type": "geoshape"
+             },
+             "encoding": {
+                 "color": {
+                     "field": "Value ($m)",
+                     "type": "quantitative", 
+                     "title": [
+                         "Value (in Millions of Dollars)"
+                     ], 
+                     "scale": {
+                         "type" :"threshold", 
+                         "domain": [10, 14, 18, 22], 
+                         "range": ["#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5"]
+                     }, 
+                     "legend": {
+                         "orient": "bottom"
+                     }
+                 }
+             }
+         }
+     ], 
+     "config": {
+         "view": {
+             "stroke": null
+         }, 
+         "axis": {
+             "labelFont": "Oxygen", 
+             "titleFont": "Oxygen"
+         }, 
+         "legend": {
+             "labelFont": "Oxygen",
+             "titleFont": "Oxygen"
+         }, 
+         "title": {
+             "font": "Oxygen",
+             "fontSize": 16,
+             "fontWeight": 600
+         }
+     }
+ }
