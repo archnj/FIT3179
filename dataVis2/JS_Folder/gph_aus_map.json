@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
      "title": "My Map", 
-     "width": 800, 
-     "height": 400, 
+     "width": 500, 
+     "height": 500, 
      "projection": {"type": "mercator"},
      "data": {
          "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/JS_Folder/simple_aus_map.json",
