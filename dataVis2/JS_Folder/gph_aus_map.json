@@ -58,10 +58,9 @@
                      "title": [
                          "Value (in Millions of Dollars)"
                      ], 
-                     "scale": {
-                         "type" :"threshold", 
-                         "domain": [1, 2, 18, 22], 
-                         "range": ["#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5"]
+                     "scale": { 
+                        "scheme": "greens", 
+                         "domain": [1, 2, 18, 22]
                      }, 
                      "legend": {
                          "orient": "bottom"
