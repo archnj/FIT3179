@@ -16,7 +16,7 @@
              {
                  "field": "properties.STE_NAME16", 
                  "type": "nominal", 
-                 "title": "State Name"
+                 "title": "State"
              }, 
              {
                  "field": "Value_per_Area", 
