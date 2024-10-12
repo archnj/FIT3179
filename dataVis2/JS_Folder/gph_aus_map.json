@@ -60,7 +60,7 @@
                      ], 
                      "scale": {
                          "type" :"threshold", 
-                         "domain": [10, 14, 18, 22], 
+                         "domain": [1, 2, 18, 22], 
                          "range": ["#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5"]
                      }, 
                      "legend": {
@@ -69,23 +69,5 @@
                  }
              }
          }
-     ], 
-     "config": {
-         "view": {
-             "stroke": null
-         }, 
-         "axis": {
-             "labelFont": "Oxygen", 
-             "titleFont": "Oxygen"
-         }, 
-         "legend": {
-             "labelFont": "Oxygen",
-             "titleFont": "Oxygen"
-         }, 
-         "title": {
-             "font": "Oxygen",
-             "fontSize": 16,
-             "fontWeight": 600
-         }
-     }
+     ]
  }
