@@ -5,7 +5,7 @@
      "height": 400, 
      "projection": {"type": "mercator"},
      "data": {
-         "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/JS_Folder/STE_2016_AUST.json",
+         "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/JS_Folder/STE_2016_AUST_original.json",
          "format": {
              "type": "topojson", 
              "feature": "STE_2016_AUST"
