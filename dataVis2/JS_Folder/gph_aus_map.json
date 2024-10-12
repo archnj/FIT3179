@@ -19,7 +19,7 @@
                  "title": "State Name"
              }, 
              {
-                 "field": "Total_Value", 
+                 "field": "Value_per_Area", 
                  "type": "quantitative", 
                  "title": "Value (in Millions of Dollars)"
              }
@@ -39,11 +39,11 @@
                      "lookup": "properties.STE_NAME16", 
                      "from":{
                          "data": {
-                             "url":  "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Map_Data.csv"
+                             "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Map_Data.csv"
                          },
                          "key": "State", 
                          "fields": [
-                             "Total_Value"
+                             "Value_per_Area"
                          ]
                      }
                  }
@@ -53,14 +53,14 @@
              },
              "encoding": {
                  "color": {
-                     "field": "Total_Value",
+                     "field": "Value_per_Area",
                      "type": "quantitative", 
                      "title": [
                          "Value (in Millions of Dollars)"
                      ], 
                      "scale": {
                          "type" :"threshold", 
-                         "domain": [1, 5, 10, 20], 
+                         "domain": [10, 14, 18, 22], 
                          "range": ["#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5"]
                      }, 
                      "legend": {
