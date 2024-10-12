@@ -39,7 +39,7 @@
                      "lookup": "properties.STE_NAME16", 
                      "from":{
                          "data": {
-                             "url":  "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/cropAndLivestock.csv"
+                             "url":  "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Map_Data.csv"
                          },
                          "key": "State", 
                          "fields": [
@@ -60,7 +60,7 @@
                      ], 
                      "scale": {
                          "type" :"threshold", 
-                         "domain": [2500, 5000, 7500, 10000], 
+                         "domain": [1, 5, 10, 20], 
                          "range": ["#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5"]
                      }, 
                      "legend": {
