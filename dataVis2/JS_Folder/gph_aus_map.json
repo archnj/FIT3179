@@ -59,8 +59,8 @@
                          "Value (in Millions of Dollars)"
                      ], 
                      "scale": { 
-                        "scheme": "greens", 
-                         "domain": [1, 2, 18, 22]
+                        "scheme": "browns", 
+                         "domain": [0, 100]
                      }, 
                      "legend": {
                          "orient": "bottom"
