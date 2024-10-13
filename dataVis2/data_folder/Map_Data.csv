@@ -1,9 +1,9 @@
-State,Value_per_Area
-Australian Capital Territory,3.49
-New South Wales,14.28
-Northern Territory,0.45
-Queensland,5.39
-South Australia,4.86
-Tasmania,17.4
-Victoria,54.47
-Western Australia,3.1
+State,Total_Value,State_Areas,Value_per_Area
+Australian Capital Territory,82.32,2358,3.49
+New South Wales,114277.47,800150,14.28
+Northern Territory,6098.73,1347791,0.45
+Queensland,93164.3,1729742,5.39
+South Australia,47879.46,984321,4.86
+Tasmania,11224.42,64519,17.4
+Victoria,123873.64,227416,54.47
+Western Australia,78366.02,2527013,3.1
