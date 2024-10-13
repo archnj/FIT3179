@@ -94,14 +94,14 @@
         "tooltip": [
           {"field": "Year", "type": "ordinal"},
           {"field": "Type", "type": "nominal"},
-          {"field": "Australian Capital Territory", "type": "quantitative"},
-          {"field": "New South Wales", "type": "quantitative"},
-          {"field": "Northern Territory", "type": "quantitative"},
-          {"field": "Queensland", "type": "quantitative"},
-          {"field": "South Australia", "type": "quantitative"},
-          {"field": "Tasmania", "type": "quantitative"},
-          {"field": "Victoria", "type": "quantitative"},
-          {"field": "Western Australia", "type": "quantitative"}
+          {"field": "Australian Capital Territory", "type": "quantitative", "title": "Australian Capital Territory (Value $m)", "format": ",.0f"},
+          {"field": "New South Wales", "type": "quantitative", "title": "New South Wales (Value $m)", "format": ",.0f"},
+          {"field": "Northern Territory", "type": "quantitative", "title": "Northern Territory (Value $m)", "format": ",.0f"},
+          {"field": "Queensland", "type": "quantitative", "title": "Queensland (Value $m)", "format": ",.0f"},
+          {"field": "South Australia", "type": "quantitative", "title": "South Australia (Value $m)", "format": ",.0f"},
+          {"field": "Tasmania", "type": "quantitative", "title": "Tasmania (Value $m)", "format": ",.0f"},
+          {"field": "Victoria", "type": "quantitative", "title": "Victoria (Value $m)", "format": ",.0f"},
+          {"field": "Western Australia", "type": "quantitative", "title": "Western Australia (Value $m)", "format": ",.0f"}
         ]
       },
       "params": [
@@ -116,6 +116,30 @@
           }
         }
       ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "fontSize": 11,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": {"value": 350},
+        "y": {"value": 20},
+        "text": {"value": "COVID-19 Pandemic"}
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"datum": "2020"},
+        "color": {"value": "red"},
+        "size": {"value": 1},
+        "strokeDash": {"value": [4, 4]}
+      }
     }
   ],
   "config": {
