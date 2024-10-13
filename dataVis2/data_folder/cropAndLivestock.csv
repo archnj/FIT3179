@@ -1,105 +1,209 @@
-Year,State,Crop_Value,Livestock_Value,Total_Value
-2010,Australian Capital Territory,0.1,3.5,3.6
-2010,New South Wales,1638.1,4168.1,5806.2
-2010,Northern Territory,0,0,0
-2010,Queensland,499.3,4302.4,4801.7
-2010,South Australia,1168.7,1244.9,2413.6
-2010,Tasmania,16,489.5,505.5
-2010,Victoria,1038,5261.6,6299.6
-2010,Western Australia,2332.7,1162.5,3495.2
-2011,Australian Capital Territory,0.1,9,9.1
-2011,New South Wales,3455.5,4629.3,8084.8
-2011,Northern Territory,0,315.4,315.4
-2011,Queensland,699.1,4614.1,5313.2
-2011,South Australia,2179.7,1438.4,3618.1
-2011,Tasmania,17.6,643.7,661.3
-2011,Victoria,1543.1,6480.6,8023.7
-2011,Western Australia,1784.1,1903.3,3687.4
-2012,Australian Capital Territory,0.06,5.53,5.59
-2012,New South Wales,2336.35,4638.7,6975.05
-2012,Northern Territory,1.16,337.06,338.22
-2012,Queensland,785.71,4684.5,5470.21
-2012,South Australia,1431.47,2132.82,3564.29
-2012,Tasmania,14.72,654.13,668.85
-2012,Victoria,1293.08,6507.68,7800.76
-2012,Western Australia,3674.42,1760.49,5434.91
-2013,Australian Capital Territory,0.19,5.15,5.34
-2013,New South Wales,3258.26,4531.68,7789.94
-2013,Northern Territory,0.37,319.53,319.9
-2013,Queensland,973.11,4690.54,5663.65
-2013,South Australia,1650.17,1887.88,3538.05
-2013,Tasmania,15.58,638.49,654.07
-2013,Victoria,1636.52,5983.19,7619.71
-2013,Western Australia,2931.39,1548.99,4480.38
-2014,Australian Capital Territory,0.15,2.72,2.87
-2014,New South Wales,2822.71,4706.09,7528.8
-2014,Northern Territory,0.1,464.85,464.95
-2014,Queensland,694.46,5208.53,5902.99
-2014,South Australia,1867.3,2135.65,4002.95
-2014,Tasmania,21.52,719.38,740.9
-2014,Victoria,1691.95,7132.18,8824.13
-2014,Western Australia,4398.87,1807.02,6205.89
-2015,Australian Capital Territory,0,5.77,5.77
-2015,New South Wales,3142.52,5858.15,9000.67
-2015,Northern Territory,0.12,722.05,722.17
-2015,Queensland,960.68,6504.25,7464.93
-2015,South Australia,1853.34,2382.28,4235.62
-2015,Tasmania,19.35,884.72,904.07
-2015,Victoria,1221.88,8074.44,9296.32
-2015,Western Australia,3744.47,1930.06,5674.53
-2016,Australian Capital Territory,0.02,6.26,6.28
-2016,New South Wales,3005.51,6181.7,9187.21
-2016,Northern Territory,1.25,568.71,569.96
-2016,Queensland,861.73,7338.14,8199.87
-2016,South Australia,1325.41,2615.23,3940.64
-2016,Tasmania,21.27,887.6,908.87
-2016,Victoria,865.15,8162.84,9027.99
-2016,Western Australia,3500.89,2303.61,5804.5
-2017,Australian Capital Territory,0.01,7.07,7.08
-2017,New South Wales,3406.03,6091.54,9497.57
-2017,Northern Territory,0.28,464.56,464.84
-2017,Queensland,664.16,7245.82,7909.98
-2017,South Australia,1786.16,2259.92,4046.08
-2017,Tasmania,24.18,813.36,837.54
-2017,Victoria,1794.57,7524.12,9318.69
-2017,Western Australia,3524.53,2651.46,6175.99
-2018,Australian Capital Territory,0.01,6.42,6.43
-2018,New South Wales,2158.09,6491.46,8649.55
-2018,Northern Territory,0.02,492.03,492.05
-2018,Queensland,651.16,6845.55,7496.71
-2018,South Australia,1389.34,2173.02,3562.36
-2018,Tasmania,7.51,957.17,964.68
-2018,Victoria,1528.15,8833.53,10361.68
-2018,Western Australia,3269.85,2824.44,6094.29
-2019,Australian Capital Territory,0,5.86,5.86
-2019,New South Wales,1297.81,6640.64,7938.45
-2019,Northern Territory,0.37,612.19,612.56
-2019,Queensland,597.25,7267.59,7864.84
-2019,South Australia,1581.99,1984.79,3566.78
-2019,Tasmania,12.04,999.25,1011.29
-2019,Victoria,1404.96,9483.51,10888.47
-2019,Western Australia,5286.19,2786.6,8072.79
-2020,Australian Capital Territory,0,5.6,5.6
-2020,New South Wales,1121.4,6852.95,7974.35
-2020,Northern Territory,0.39,759.2,759.59
-2020,Queensland,355.8,8051.84,8407.64
-2020,South Australia,1440.86,1895.31,3336.17
-2020,Tasmania,23.69,1066.78,1090.47
-2020,Victoria,2213.42,10008.82,12222.24
-2020,Western Australia,3540,2734.54,6274.54
-2021,Australian Capital Territory,0.02,6.77,6.79
-2021,New South Wales,5330.73,6938.53,12269.26
-2021,Northern Territory,1.66,581.26,582.92
-2021,Queensland,1039.65,7522.5,8562.15
-2021,South Australia,1866.81,1859.21,3726.02
-2021,Tasmania,27.92,1096.13,1124.05
-2021,Victoria,2239.95,9289.49,11529.44
-2021,Western Australia,4441.8,2610.03,7051.83
-2022,Australian Capital Territory,0,12.01,12.01
-2022,New South Wales,5588.24,7987.38,13575.62
-2022,Northern Territory,0.4,455.77,456.17
-2022,Queensland,1628.77,8477.66,10106.43
-2022,South Australia,2394.22,1934.58,4328.8
-2022,Tasmania,32.52,1120.31,1152.83
-2022,Victoria,2383.82,10277.09,12660.91
-2022,Western Australia,7282.83,2630.94,9913.77
+Year,State,Type,Value
+2010,Australian Capital Territory,Crop,0.1
+2010,Australian Capital Territory,Livestock,3.5
+2010,New South Wales,Crop,1638.1
+2010,New South Wales,Livestock,4168.1
+2010,Northern Territory,Crop,0
+2010,Northern Territory,Livestock,0
+2010,Queensland,Crop,499.3
+2010,Queensland,Livestock,4302.4
+2010,South Australia,Crop,1168.7
+2010,South Australia,Livestock,1244.9
+2010,Tasmania,Crop,16
+2010,Tasmania,Livestock,489.5
+2010,Victoria,Crop,1038
+2010,Victoria,Livestock,5261.6
+2010,Western Australia,Crop,2332.7
+2010,Western Australia,Livestock,1162.5
+2011,Australian Capital Territory,Crop,0.1
+2011,Australian Capital Territory,Livestock,9
+2011,New South Wales,Crop,3455.5
+2011,New South Wales,Livestock,4629.3
+2011,Northern Territory,Crop,0
+2011,Northern Territory,Livestock,315.4
+2011,Queensland,Crop,699.1
+2011,Queensland,Livestock,4614.1
+2011,South Australia,Crop,2179.7
+2011,South Australia,Livestock,1438.4
+2011,Tasmania,Crop,17.6
+2011,Tasmania,Livestock,643.7
+2011,Victoria,Crop,1543.1
+2011,Victoria,Livestock,6480.6
+2011,Western Australia,Crop,1784.1
+2011,Western Australia,Livestock,1903.3
+2012,Australian Capital Territory,Crop,0.06
+2012,Australian Capital Territory,Livestock,5.53
+2012,New South Wales,Crop,2336.35
+2012,New South Wales,Livestock,4638.7
+2012,Northern Territory,Crop,1.16
+2012,Northern Territory,Livestock,337.06
+2012,Queensland,Crop,785.71
+2012,Queensland,Livestock,4684.5
+2012,South Australia,Crop,1431.47
+2012,South Australia,Livestock,2132.82
+2012,Tasmania,Crop,14.72
+2012,Tasmania,Livestock,654.13
+2012,Victoria,Crop,1293.08
+2012,Victoria,Livestock,6507.68
+2012,Western Australia,Crop,3674.42
+2012,Western Australia,Livestock,1760.49
+2013,Australian Capital Territory,Crop,0.19
+2013,Australian Capital Territory,Livestock,5.15
+2013,New South Wales,Crop,3258.26
+2013,New South Wales,Livestock,4531.68
+2013,Northern Territory,Crop,0.37
+2013,Northern Territory,Livestock,319.53
+2013,Queensland,Crop,973.11
+2013,Queensland,Livestock,4690.54
+2013,South Australia,Crop,1650.17
+2013,South Australia,Livestock,1887.88
+2013,Tasmania,Crop,15.58
+2013,Tasmania,Livestock,638.49
+2013,Victoria,Crop,1636.52
+2013,Victoria,Livestock,5983.19
+2013,Western Australia,Crop,2931.39
+2013,Western Australia,Livestock,1548.99
+2014,Australian Capital Territory,Crop,0.15
+2014,Australian Capital Territory,Livestock,2.72
+2014,New South Wales,Crop,2822.71
+2014,New South Wales,Livestock,4706.09
+2014,Northern Territory,Crop,0.1
+2014,Northern Territory,Livestock,464.85
+2014,Queensland,Crop,694.46
+2014,Queensland,Livestock,5208.53
+2014,South Australia,Crop,1867.3
+2014,South Australia,Livestock,2135.65
+2014,Tasmania,Crop,21.52
+2014,Tasmania,Livestock,719.38
+2014,Victoria,Crop,1691.95
+2014,Victoria,Livestock,7132.18
+2014,Western Australia,Crop,4398.87
+2014,Western Australia,Livestock,1807.02
+2015,Australian Capital Territory,Crop,0
+2015,Australian Capital Territory,Livestock,5.77
+2015,New South Wales,Crop,3142.52
+2015,New South Wales,Livestock,5858.15
+2015,Northern Territory,Crop,0.12
+2015,Northern Territory,Livestock,722.05
+2015,Queensland,Crop,960.68
+2015,Queensland,Livestock,6504.25
+2015,South Australia,Crop,1853.34
+2015,South Australia,Livestock,2382.28
+2015,Tasmania,Crop,19.35
+2015,Tasmania,Livestock,884.72
+2015,Victoria,Crop,1221.88
+2015,Victoria,Livestock,8074.44
+2015,Western Australia,Crop,3744.47
+2015,Western Australia,Livestock,1930.06
+2016,Australian Capital Territory,Crop,0.02
+2016,Australian Capital Territory,Livestock,6.26
+2016,New South Wales,Crop,3005.51
+2016,New South Wales,Livestock,6181.7
+2016,Northern Territory,Crop,1.25
+2016,Northern Territory,Livestock,568.71
+2016,Queensland,Crop,861.73
+2016,Queensland,Livestock,7338.14
+2016,South Australia,Crop,1325.41
+2016,South Australia,Livestock,2615.23
+2016,Tasmania,Crop,21.27
+2016,Tasmania,Livestock,887.6
+2016,Victoria,Crop,865.15
+2016,Victoria,Livestock,8162.84
+2016,Western Australia,Crop,3500.89
+2016,Western Australia,Livestock,2303.61
+2017,Australian Capital Territory,Crop,0.01
+2017,Australian Capital Territory,Livestock,7.07
+2017,New South Wales,Crop,3406.03
+2017,New South Wales,Livestock,6091.54
+2017,Northern Territory,Crop,0.28
+2017,Northern Territory,Livestock,464.56
+2017,Queensland,Crop,664.16
+2017,Queensland,Livestock,7245.82
+2017,South Australia,Crop,1786.16
+2017,South Australia,Livestock,2259.92
+2017,Tasmania,Crop,24.18
+2017,Tasmania,Livestock,813.36
+2017,Victoria,Crop,1794.57
+2017,Victoria,Livestock,7524.12
+2017,Western Australia,Crop,3524.53
+2017,Western Australia,Livestock,2651.46
+2018,Australian Capital Territory,Crop,0.01
+2018,Australian Capital Territory,Livestock,6.42
+2018,New South Wales,Crop,2158.09
+2018,New South Wales,Livestock,6491.46
+2018,Northern Territory,Crop,0.02
+2018,Northern Territory,Livestock,492.03
+2018,Queensland,Crop,651.16
+2018,Queensland,Livestock,6845.55
+2018,South Australia,Crop,1389.34
+2018,South Australia,Livestock,2173.02
+2018,Tasmania,Crop,7.51
+2018,Tasmania,Livestock,957.17
+2018,Victoria,Crop,1528.15
+2018,Victoria,Livestock,8833.53
+2018,Western Australia,Crop,3269.85
+2018,Western Australia,Livestock,2824.44
+2019,Australian Capital Territory,Crop,0
+2019,Australian Capital Territory,Livestock,5.86
+2019,New South Wales,Crop,1297.81
+2019,New South Wales,Livestock,6640.64
+2019,Northern Territory,Crop,0.37
+2019,Northern Territory,Livestock,612.19
+2019,Queensland,Crop,597.25
+2019,Queensland,Livestock,7267.59
+2019,South Australia,Crop,1581.99
+2019,South Australia,Livestock,1984.79
+2019,Tasmania,Crop,12.04
+2019,Tasmania,Livestock,999.25
+2019,Victoria,Crop,1404.96
+2019,Victoria,Livestock,9483.51
+2019,Western Australia,Crop,5286.19
+2019,Western Australia,Livestock,2786.6
+2020,Australian Capital Territory,Crop,0
+2020,Australian Capital Territory,Livestock,5.6
+2020,New South Wales,Crop,1121.4
+2020,New South Wales,Livestock,6852.95
+2020,Northern Territory,Crop,0.39
+2020,Northern Territory,Livestock,759.2
+2020,Queensland,Crop,355.8
+2020,Queensland,Livestock,8051.84
+2020,South Australia,Crop,1440.86
+2020,South Australia,Livestock,1895.31
+2020,Tasmania,Crop,23.69
+2020,Tasmania,Livestock,1066.78
+2020,Victoria,Crop,2213.42
+2020,Victoria,Livestock,10008.82
+2020,Western Australia,Crop,3540
+2020,Western Australia,Livestock,2734.54
+2021,Australian Capital Territory,Crop,0.02
+2021,Australian Capital Territory,Livestock,6.77
+2021,New South Wales,Crop,5330.73
+2021,New South Wales,Livestock,6938.53
+2021,Northern Territory,Crop,1.66
+2021,Northern Territory,Livestock,581.26
+2021,Queensland,Crop,1039.65
+2021,Queensland,Livestock,7522.5
+2021,South Australia,Crop,1866.81
+2021,South Australia,Livestock,1859.21
+2021,Tasmania,Crop,27.92
+2021,Tasmania,Livestock,1096.13
+2021,Victoria,Crop,2239.95
+2021,Victoria,Livestock,9289.49
+2021,Western Australia,Crop,4441.8
+2021,Western Australia,Livestock,2610.03
+2022,Australian Capital Territory,Crop,0
+2022,Australian Capital Territory,Livestock,12.01
+2022,New South Wales,Crop,5588.24
+2022,New South Wales,Livestock,7987.38
+2022,Northern Territory,Crop,0.4
+2022,Northern Territory,Livestock,455.77
+2022,Queensland,Crop,1628.77
+2022,Queensland,Livestock,8477.66
+2022,South Australia,Crop,2394.22
+2022,South Australia,Livestock,1934.58
+2022,Tasmania,Crop,32.52
+2022,Tasmania,Livestock,1120.31
+2022,Victoria,Crop,2383.82
+2022,Victoria,Livestock,10277.09
+2022,Western Australia,Crop,7282.83
+2022,Western Australia,Livestock,2630.94
