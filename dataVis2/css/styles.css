@@ -1,5 +1,39 @@
 body * {
     font-family: 'Lato', sans-serif;
-    font-weight: '400';
+    font-weight: 400;
 }
 
+.container {
+    border-left: 250px solid #4f2525;
+    border-right: 250px solid #4f2525;
+    padding: 20px; 
+    background-color: #F5E9D9; 
+    margin: 0;  
+}
+
+.vis-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F5E9D9;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    background-color: #4f2525;
+    color: #F5E9D9;
+    padding: 10px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+    padding: 20px;
+    text-align: justify;
+    background-color: #F5E9D9;
+}
