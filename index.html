@@ -82,7 +82,7 @@
                     <div class="chart">
                         <h3>Commodity Details</h3>
                         <div id="vis4" class="vis-container"></div>
-                        <p>This visualization provides a detailed view of commodities, potentially including a donut chart, heatmap, and area chart.</p>
+                        <p>This visualisation provides a detailed view of commodities, potentially including a donut chart, heatmap, and area chart.</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
     </main>
 
     <script>
-        var ausMap = "./dataVis2/JS_Folder/gph_aus_map.json";
+        var ausMap = "./dataVis2/JS_Folder/ausMap.json";
         var typeLineGraph = "./dataVis2/JS_Folder/typeLineGraph.json";
         var stateStackedBarChart = "./dataVis2/JS_Folder/stateStackedBarChart.json";
         var concatDonutHeatArea = "./dataVis2/JS_Folder/concatDonutHeatArea.json";
@@ -98,7 +98,7 @@
         vegaEmbed('#vis1', ausMap, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
+        /*vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
         vegaEmbed('#vis3', stateStackedBarChart, { "actions": false }).then(function(result) {
@@ -106,6 +106,7 @@
 
         vegaEmbed('#vis4', concatDonutHeatArea, { "actions": false }).then(function(result) {
         }).catch(console.error);
+        */
     </script>
 </body>
 </html>
