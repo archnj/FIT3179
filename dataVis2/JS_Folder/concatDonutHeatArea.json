@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#FFBF61", 
   "data": {
     "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Aus_Agricultural_Commodities.csv"
   },

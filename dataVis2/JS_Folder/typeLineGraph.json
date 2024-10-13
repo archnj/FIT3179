@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 500,
-  "title": "Crop and Livestock Values by State",
+  "background": "#FFBF61",
   "data": {
     "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/cropAndLivestock.csv"
   },
