@@ -33,64 +33,80 @@
 
 </head>
 <body>
-
     <div class="container">
         <div class="pure-g">
             <div class="pure-u-1">
-                <div class = "pure-u-1-1">
+                <div class="pure-u-1-1">
                     <style>
                         h1 {text-align: center;}
                     </style>
-                <h1>AGRICULTURAL COMMODITIES IN AUSTRALIA</h1>
-                <p style ="margin-top: 20px; text-align: left;"> 
-                    Farming plays a crucial role in Australia's economy and culture.
-                    Agriculture alone contributes approximately 3% to Australia's GDP and employs around 230,000 people. 
-                    Australian agriculture is broadly divided into two main categories: Livestock and Crops. 
-                    Due to land, climate and conditions varying throughout the country, many states produce different types of commodities with diverse production levels. 
-                    Commodities refer to the raw materials and products, for example Wheat and Rice for Crops, and Milk and Wool for Livestock. </p>
+                    <h1>AGRICULTURAL COMMODITIES IN AUSTRALIA</h1>
+                    <p style="margin-top: 20px; text-align: left;"> 
+                        Farming plays a crucial role in Australia's economy and culture.Agriculture alone contributes approximately 3% to Australia's 
+                        GDP and employs around 230,000 people. Australian agriculture is broadly divided into two main categories: Livestock and Crops. 
+                        Due to land, climate and conditions varying throughout the country, many states produce different types of commodities with diverse production levels. 
+                        Commodities refer to the raw materials and products, for example Wheat and Rice for Crops, and Milk and Wool for Livestock.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class ="pure-g">
-            <div class="pure-u-1" syle="text-align: center;">
-                <h2> Agricultural Productivity Across Australia</h2>
-                <div id ="aus_map" class ="vis-container" style="margin: 0 auto; text-align: center; position: relative;">
-                </div>
+        <div class="pure-g">
+            <div class="pure-u-1" style="text-align: center;">
+                <h2>Agricultural Productivity Across Australia</h2>
+                <div id="aus_map" class="vis-container" style="margin: 0 auto; text-align: center; position: relative;"></div>
+                <p><strong>Value ($m) per Square Kilometre</strong></p>
+                <p>
+                    The map above highlights the total value of commodities (in million dollars) per km squared of land area. 
+                    Since many territories and states vary in size, this metric provides a more equitable comparison of agricultural productivity across regions. 
+                    It accounts for the fact that larger states might have higher total output simply due to their greater land area, while smaller states or territories 
+                    could be more efficient in their use of available land. This approach allows for a clearer understanding of which areas are maximising their 
+                    agricultural potential relative to their size, rather than just looking at absolute production values.
+                </p>
             </div>
+        </div>
             
         <div class="pure-g">
             <div class="pure-u-1">
-                <h2>Agricultural Value Map of Australia</h2>
-                <div id="aus_map" class="vis-container"></div>
-                <p>Add some text pls</p>
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <h2>Crop and Livestock Values by State</h2>
+                <h2>Crop and Livestock Value Distribution Across Australian States and Territories</h2>
                 <div id="stacked_bar_chart" class="vis-container"></div>
-                <p>Add some text pls</p>
+                <p>
+                    The graph above displays the value of agricultural commodities, divided into crops and livestock, for each Australian state and territory. 
+                    Here, one can see how the agricultural focus varies among states due to factors such as climate, land availability, and local specialisations. 
+                    This highlights which states are more crop-oriented, which are more livestock-oriented, and which have a more balanced agricultural profile.
+                </p>
             </div>
         </div>
 
         <div class="pure-g">
             <div class="pure-u-1">
-                <h2>Crop and Livestock Values Over Time</h2>
+                <h2>Trends in Agricultural Commodity Values Across Australian States (2010-2022)</h2>
                 <div id="line_chart" class="vis-container"></div>
-                <p>Add some text pls</p>
+                <p>
+                    This interactive graph allows you to explore the changing landscape of Australian agriculture over time. 
+                    Each line represents a different state or territory, showing how their agricultural commodity values have evolved from 2010 to 2022.
+                    Use the filter to switch between crop and livestock data.
+                </p>
             </div>
         </div>
 
         <div class="pure-g">
             <div class="pure-u-1">
-                <h2>Agricultural Commodity Analysis</h2>
+                <h2>Detailed Commodity Analysis by State</h2>
                 <div id="concat_chart" class="vis-container"></div>
-                <p>Add some text pls</p>
+                <p>
+                    The Australian agricultural sector is nuanced, with each state offering a unique profile of commodities. Below are three charts 
+                    which showcase these variations. Please use the filters to gain a deeper insight.
+                </p>
+                <p>
+                    The Cumulative Donut Chart displays the proportion of specific commodities within crops or livestock categories for the selected 
+                    state during the selected time period. The Heat Map shows the intensity of production for various commodities across time in 
+                    the selected state. Moreover, the Stacked Area Chart illustrates how the composition of commodities has changed over time within the selected state.
+                </p>
             </div>
         </div>
     </div>
+
 
     <script>
         var ausMap = "./dataVis2/JS_Folder/ausMap.json";
