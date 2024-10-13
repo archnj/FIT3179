@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Vertically Concatenated Graphs with Enhanced Interactivity and Precision Error Fix",
   "data": {
     "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Aus_Agricultural_Commodities.csv"
   },
@@ -42,9 +41,9 @@
   ],
   "vconcat": [
     {
-      "title": "Cumulative Donut Chart (2010 - 2022)",
-      "width": 300,
-      "height": 300,
+      "title": "Cumulative Donut Chart",
+      "width": 500,
+      "height": 500,
       "transform": [
         {"filter": "datum.Type == type_selection"},
         {"filter": "datum.Year >= 2010 && datum.Year <= year_selection"},
@@ -75,8 +74,8 @@
     },
     {
       "title": "Heatmap",
-      "width": 400,
-      "height": 300,
+      "width": 500,
+      "height": 500,
       "transform": [
         {"filter": "datum.Type == type_selection"},
         {"filter": "state_selection == null || datum.State == state_selection"},
@@ -109,8 +108,8 @@
     },
     {
       "title": "Area Chart",
-      "width": 400,
-      "height": 300,
+      "width": 500,
+      "height": 500,
       "transform": [
         {"filter": "datum.Type == type_selection"},
         {"filter": "state_selection == null || datum.State == state_selection"},
