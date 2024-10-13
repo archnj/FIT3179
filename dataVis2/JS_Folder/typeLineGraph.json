@@ -1,26 +1,126 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
-    "data": {
-      "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/C_and_R_Aus_Only.csv"
-    },
-    
-    "mark": {
-        "type": "line", 
-        "point": true
-    }, 
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "ordinal"
-      },
-      "y": {
-        "field":"Value", 
-        "type": "quantitative"
-      },
-      "color": {
-        "field": "Type", 
-        "scale": { "scheme": "category10"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": "Crop and Livestock Values by State",
+  "data": {
+    "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/cropAndLivestock.csv"
+  },
+  "params": [
+    {
+      "name": "Type_selection",
+      "value": "Livestock",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Crop",
+          "Livestock"
+        ],
+        "labels": [
+          "Crop",
+          "Livestock"
+        ],
+        "name": "Type Selection: "
       }
     }
+  ],
+  "transform": [
+    {"filter": "datum.Type == Type_selection"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "labelAngle": 0
+      }
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Australian Capital Territory",
+              "New South Wales",
+              "Northern Territory",
+              "Queensland",
+              "South Australia",
+              "Tasmania",
+              "Victoria",
+              "Western Australia"
+            ],
+            "range": [
+              "#e41a1c",
+              "#377eb8",
+              "#4daf4a",
+              "#984ea3",
+              "#ff7f00",
+              "#ffff33",
+              "#a65628",
+              "#f781bf"
+            ]
+          },
+          "legend": {
+            "labelFontSize": 12,
+            "titleFontSize": 12
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Value"
+        }
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [{"pivot": "State", "value": "Value", "groupby": ["Year", "Type"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Type", "type": "nominal"},
+          {"field": "Australian Capital Territory", "type": "quantitative"},
+          {"field": "New South Wales", "type": "quantitative"},
+          {"field": "Northern Territory", "type": "quantitative"},
+          {"field": "Queensland", "type": "quantitative"},
+          {"field": "South Australia", "type": "quantitative"},
+          {"field": "Tasmania", "type": "quantitative"},
+          {"field": "Victoria", "type": "quantitative"},
+          {"field": "Western Australia", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
   }
+}
