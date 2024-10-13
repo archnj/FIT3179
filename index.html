@@ -20,17 +20,30 @@
 <body>
     <div id="vis1" class="vis-container"></div>
     <p>aus Map</p>
+    <div id="vis2" class="vis-container"></div>
+    <p>concat</p>
     <div id="vis3" class="vis-container"></div>
     <p> state stacked bar chart </p>
+    <div id="vis4" class="vis-container"></div>
+    <p>aus Map</p>
 
     <script>
-        var ausMap = "./dataVis2/JS_Folder/ausMap.json";
         var stateStackedBarChart = "./dataVis2/JS_Folder/stateStackedBarChart.json";
+        var typeLineGraph = "./dataVis2/JS_Folder/typeLineGraph.json";
+        var ausMap = "./dataVis2/JS_Folder/ausMap.json";
+        var concatDonutHeatArea = "./dataVis2/JS_Folder/concatDonutHeatArea.json";
+        
 
         vegaEmbed('#vis1', ausMap, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        vegaEmbed('#vis3', stateStackedBarChart, { "actions": false }).then(function(result) {
+        vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
+        }).catch(console.error);
+
+        vegaEmbed('#vis3', ausMap, { "actions": false }).then(function(result) {
+        }).catch(console.error);
+
+        vegaEmbed('#vis4', concatDonutHeatArea, { "actions": false }).then(function(result) {
         }).catch(console.error);
     </script>
 </body>
