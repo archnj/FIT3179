@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/cropAndLivestock.csv"
+    },
+    
+    "mark": {
+        "type": "line", 
+        "point": true
+    }, 
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal"
+      },
+      "y": {
+        "field":"Crop_Value", 
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "State", 
+        "scale": { "scheme": "category10"}
+      }
+    }
+  }
