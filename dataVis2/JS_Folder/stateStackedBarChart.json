@@ -50,7 +50,7 @@
     "tooltip": [
       {"field": "State", "type": "nominal", "title": "State"},
       {"field": "Type", "type": "nominal", "title": "Category"},
-      {"field": "Value", "type": "quantitative", "title": "Value (in millions AUD)"}
+      {"field": "Value", "type": "quantitative", "title": "Value (in millions AUD)", "format": ",.0f"}
     ],
     "fillOpacity": {
       "condition": [
