@@ -1,72 +1,76 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
-     "title": "My Map", 
-     "width": 500, 
-     "height": 500, 
-     "projection": {"type": "mercator"},
-     "data": {
-         "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/JS_Folder/simple_aus_map.json",
-         "format": {
-             "type": "topojson", 
-             "feature": "STE_2016_AUST"
-         }
-     },
-     "encoding": {
-         "tooltip": [
-             {
-                 "field": "properties.STE_NAME16", 
-                 "type": "nominal", 
-                 "title": "State"
-             }, 
-             {
-                 "field": "Value_per_Area", 
-                 "type": "quantitative", 
-                 "title": "Value (in Millions of Dollars)"
-             }
-         ]
-     }, 
-     "layer": [
-         {
-             "mark": {
-                 "type": "geoshape", 
-                 "fill": "gainsboro", 
-                 "stroke": "white"
-             }
-         }, 
-         {
-             "transform": [
-                 {
-                     "lookup": "properties.STE_NAME16", 
-                     "from":{
-                         "data": {
-                             "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Map_Data.csv"
-                         },
-                         "key": "State", 
-                         "fields": [
-                             "Value_per_Area"
-                         ]
-                     }
-                 }
-             ], 
-             "mark": {
-                 "type": "geoshape"
-             },
-             "encoding": {
-                 "color": {
-                     "field": "Value_per_Area",
-                     "type": "quantitative", 
-                     "title": [
-                         "Value (in Millions of Dollars)"
-                     ], 
-                     "scale": { 
-                        "scheme": "browns", 
-                         "domain": [0, 100]
-                     }, 
-                     "legend": {
-                         "orient": "bottom"
-                     }
-                 }
-             }
-         }
-     ]
- }
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Agricultural Productivity Across Australia",
+    "width": 500,
+    "height": 500,
+    "projection": {"type": "mercator"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/JS_Folder/simple_aus_map.json",
+      "format": {
+        "type": "topojson",
+        "feature": "STE_2016_AUST"
+      }
+    },
+    "encoding": {
+      "tooltip": [
+        {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
+        {"field": "Value_per_Area", "type": "quantitative", "title": "Value ($m) per Square Kilometre", "format": ".2f"}
+      ]
+    },
+    "layer": [
+      {
+        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+      },
+      {
+        "transform": [
+          {
+            "lookup": "properties.STE_NAME16",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Map_Data.csv"
+              },
+              "key": "State",
+              "fields": ["Value_per_Area"]
+            }
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": null},
+        "encoding": {
+          "color": {
+            "field": "Value_per_Area",
+            "type": "quantitative",
+            "title": ["Value ($m)", "per Square", "Kilometre"],
+            "scale": {
+              "type": "threshold",
+              "domain": [5, 10, 15, 20],
+              "range": ["#e6f2ff", "#99ccff", "#4da6ff", "#0066cc", "#004080"]
+            },
+            "legend": {
+              "orient": "right",
+              "direction": "vertical",
+              "tickCount": 6
+            }
+          }
+        }
+      },
+      {
+        "mark": {"type": "text", "fontSize": 8, "font": "Lato"},
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"},
+          "text": {"field": "state", "type": "nominal"}
+        },
+        "data": {
+          "values": [
+            {"state": "Victoria", "longitude": 144.5, "latitude": -37},
+            {"state": "Tasmania", "longitude": 146.5, "latitude": -42},
+            {"state": "Queensland", "longitude": 144, "latitude": -22},
+            {"state": "New South Wales", "longitude": 146, "latitude": -32},
+            {"state": "Western Australia", "longitude": 122, "latitude": -25},
+            {"state": "Northern Territory", "longitude": 133, "latitude": -20},
+            {"state": "South Australia", "longitude": 135, "latitude": -30}
+          ]
+        }
+      }
+    ]
+  }
