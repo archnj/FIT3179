@@ -9,6 +9,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
     <style>
         .vis-container {
             width: 100%;
@@ -18,33 +30,69 @@
     </style>
 </head>
 <body>
-    <div id="vis1" class="vis-container"></div>
-    <p>aus Map</p>
-    <div id="vis2" class="vis-container"></div>
-    <p>concat</p>
-    <div id="vis3" class="vis-container"></div>
-    <p> state stacked bar chart </p>
-    <div id="vis4" class="vis-container"></div>
-    <p>aus Map</p>
+    <div class="container">
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h1>CROPS AND LIVESTOCK COMMODITIES IN AUSTRALIA</h1>
+                <p>Add some text pls</p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h2>Agricultural Value Map of Australia</h2>
+                <div id="aus_map" class="vis-container"></div>
+                <p>Add some text pls</p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h2>Crop and Livestock Values by State</h2>
+                <div id="stacked_bar_chart" class="vis-container"></div>
+                <p>Add some text pls</p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h2>Crop and Livestock Values Over Time</h2>
+                <div id="line_chart" class="vis-container"></div>
+                <p>Add some text pls</p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h2>Agricultural Commodity Analysis</h2>
+                <div id="concat_chart" class="vis-container"></div>
+                <p>Add some text pls</p>
+            </div>
+        </div>
+    </div>
 
     <script>
+        var ausMap = "./dataVis2/JS_Folder/ausMap.json";
         var stateStackedBarChart = "./dataVis2/JS_Folder/stateStackedBarChart.json";
         var typeLineGraph = "./dataVis2/JS_Folder/typeLineGraph.json";
-        var ausMap = "./dataVis2/JS_Folder/ausMap.json";
         var concatDonutHeatArea = "./dataVis2/JS_Folder/concatDonutHeatArea.json";
-        
 
-        vegaEmbed('#vis1', ausMap, { "actions": false }).then(function(result) {
+        vegaEmbed('#aus_map', ausMap, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
+        vegaEmbed('#stacked_bar_chart', stateStackedBarChart, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        vegaEmbed('#vis3', ausMap, { "actions": false }).then(function(result) {
+        vegaEmbed('#line_chart', typeLineGraph, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        vegaEmbed('#vis4', concatDonutHeatArea, { "actions": false }).then(function(result) {
+        vegaEmbed('#concat_chart', concatDonutHeatArea, { "actions": false }).then(function(result) {
         }).catch(console.error);
     </script>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 13px; color: #000000;">
+        <p>A visualization completed by [Your Name] on [Date].</p>
+        <p>Data provided by [Data Source].</p>
+    </footer>
 </body>
 </html>
