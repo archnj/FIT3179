@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,107 +9,27 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-
     <style>
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Oxygen', sans-serif;
-        }
-        .chart {
-            margin-bottom: 30px;
-        }
         .vis-container {
             width: 100%;
             height: 400px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Crops and Livestock Commodities in Australia</h1>
-        <p>Agriculture is an important part of Australia's economy. It accounts for around 11 per cent of goods and services trade, adds around 2.6 per cent of all employment, and exports goods to other countries as well. Farming in Australia can be broken down into two big sectors: Plant and Animal derivatives. These sectors fluctuate much from state to state, territory to territory, as much of the land in Australia is unarable, and different states have different conditions that would best fit certain commodities.</p>
-    </header>
-
-    <main>
-        <section>
-            <h2>Overview</h2>
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <div class="chart">
-                        <h3>Total Value by State</h3>
-                        <div id="vis1" class="vis-container"></div>
-                        <p>This.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Commodity Analysis</h2>
-            <div class="pure-g">
-                <div class="pure-u-1-2">
-                    <div class="chart">
-                        <h3>Commodity Types Over Time</h3>
-                        <div id="vis2" class="vis-container"></div>
-                        <p>This.</p>
-                    </div>
-                </div>
-                <div class="pure-u-1-2">
-                    <div class="chart">
-                        <h3>State Commodity Breakdown</h3>
-                        <div id="vis3" class="vis-container"></div>
-                        <p>This.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Detailed Commodity View</h2>
-            <div class="pure-g">
-                <div class="pure-u-1">
-                    <div class="chart">
-                        <h3>Commodity Details</h3>
-                        <div id="vis4" class="vis-container"></div>
-                        <p>This.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div id="vis1" class="vis-container"></div>
+    <div id="vis3" class="vis-container"></div>
 
     <script>
         var ausMap = "./dataVis2/JS_Folder/ausMap.json";
-        //var typeLineGraph = "./dataVis2/JS_Folder/typeLineGraph.json";//
         var stateStackedBarChart = "./dataVis2/JS_Folder/stateStackedBarChart.json";
-        //var concatDonutHeatArea = "./dataVis2/JS_Folder/concatDonutHeatArea.json";//
 
         vegaEmbed('#vis1', ausMap, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        /*vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
-        }).catch(console.error);
-        */
-
         vegaEmbed('#vis3', stateStackedBarChart, { "actions": false }).then(function(result) {
         }).catch(console.error);
-
-        /*
-        vegaEmbed('#vis4', concatDonutHeatArea, { "actions": false }).then(function(result) {
-        }).catch(console.error);
-        */
-        
     </script>
 </body>
 </html>
