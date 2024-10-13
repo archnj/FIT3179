@@ -1,9 +1,9 @@
-State,Total_Value,State_Areas,Value_per_Area
-Australian Capital Territory,82.32,2358,3.49
-New South Wales,114277.47,800150,14.28
-Northern Territory,6098.73,1347791,0.45
-Queensland,93164.3,1729742,5.39
-South Australia,47879.46,984321,4.86
-Tasmania,11224.42,64519,17.4
-Victoria,123873.64,227416,54.47
-Western Australia,78366.02,2527013,3.1
+State,Crop_Value,Livestock_Value,Total_Value,State_Areas,Value_per_Area
+Australian Capital Territory,0.66,81.66,82.32,2358,3.49
+New South Wales,38561.25,75716.22,114277.47,800150,14.28
+Northern Territory,6.12,6092.61,6098.73,1347791,0.45
+Queensland,10410.88,82753.42,93164.3,1729742,5.39
+South Australia,21935.47,25943.99,47879.46,984321,4.86
+Tasmania,253.9,10970.52,11224.42,64519,17.4
+Victoria,20854.55,103019.09,123873.64,227416,54.47
+Western Australia,49712.04,28653.98,78366.02,2527013,3.1
