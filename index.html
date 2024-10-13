@@ -91,21 +91,24 @@
 
     <script>
         var ausMap = "./dataVis2/JS_Folder/ausMap.json";
-        var typeLineGraph = "./dataVis2/JS_Folder/typeLineGraph.json";
+        //var typeLineGraph = "./dataVis2/JS_Folder/typeLineGraph.json";//
         var stateStackedBarChart = "./dataVis2/JS_Folder/stateStackedBarChart.json";
-        var concatDonutHeatArea = "./dataVis2/JS_Folder/concatDonutHeatArea.json";
+        //var concatDonutHeatArea = "./dataVis2/JS_Folder/concatDonutHeatArea.json";//
 
         vegaEmbed('#vis1', ausMap, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
-        vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
+        /*vegaEmbed('#vis2', typeLineGraph, { "actions": false }).then(function(result) {
         }).catch(console.error);
+        */
 
         vegaEmbed('#vis3', stateStackedBarChart, { "actions": false }).then(function(result) {
         }).catch(console.error);
 
+        /*
         vegaEmbed('#vis4', concatDonutHeatArea, { "actions": false }).then(function(result) {
         }).catch(console.error);
+        */
         
     </script>
 </body>
