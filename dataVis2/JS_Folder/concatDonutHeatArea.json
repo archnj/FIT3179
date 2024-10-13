@@ -1,0 +1,147 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Vertically Concatenated Graphs with Enhanced Interactivity and Precision Error Fix",
+    "data": {
+      "url": "https://raw.githubusercontent.com/archnj/FIT3179/main/dataVis2/data_folder/Aus_Agricultural_Commodities.csv"
+    },
+    "params": [
+      {
+        "name": "year_selection",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 2012,
+          "max": 2022,
+          "step": 1,
+          "name": "Year: "
+        }
+      },
+      {
+        "name": "state_selection",
+        "value": null,
+        "bind": {
+          "input": "select",
+          "options": [null, "New South Wales", "Victoria", "Queensland", "South Australia", "Western Australia", "Tasmania", "Northern Territory", "Australian Capital Territory"],
+          "labels": ["All", "New South Wales", "Victoria", "Queensland", "South Australia", "Western Australia", "Tasmania", "Northern Territory", "Australian Capital Territory"], 
+          "name": "Select State: "
+        }
+      },
+      {
+        "name": "type_selection",
+        "value": "Crops",
+        "bind": {
+          "input": "select",
+          "options": ["Crops", "Livestock"],
+          "labels": ["Crops", "Livestock"], 
+          "name": "Type: "
+        }
+      }
+    ],
+    "vconcat": [
+      {
+        "title": "Cumulative Donut Chart (2010 - 2022)",
+        "width": 300,
+        "height": 300,
+        "transform": [
+          {"filter": "datum.Type == type_selection"},
+          {"filter": "datum.Year >= 2010 && datum.Year <= year_selection"},
+          {"filter": "state_selection == null || datum.State == state_selection"},
+          {
+            "aggregate": [{
+              "op": "sum",
+              "field": "Value ($m)",
+              "as": "total_value"
+            }],
+            "groupby": ["Commodity"]
+          },
+          {"filter": "datum.total_value > 0.01"}
+        ],
+        "mark": {"type": "arc", "innerRadius": 50},
+        "encoding": {
+          "theta": {"field": "total_value", "type": "quantitative", "stack": true},
+          "color": {"field": "Commodity", "type": "nominal"},
+          "tooltip": [
+            {"field": "Commodity", "type": "nominal"},
+            {"field": "total_value", "type": "quantitative", "format": ".2f", "title": "Cumulative Value ($m)"}
+          ]
+        }
+      },
+      {
+        "title": "Heatmap",
+        "width": 400,
+        "height": 300,
+        "transform": [
+          {"filter": "datum.Type == type_selection"},
+          {"filter": "state_selection == null || datum.State == state_selection"},
+          {"filter": "datum.Year <= year_selection"},
+          {
+            "aggregate": [{
+              "op": "sum",
+              "field": "Value ($m)",
+              "as": "total_value"
+            }],
+            "groupby": ["Year", "Commodity"]
+          },
+          {"filter": "datum.total_value > 0.01"}
+        ],
+        "mark": "rect",
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal"},
+          "y": {"field": "Commodity", "type": "nominal"},
+          "color": {
+            "field": "total_value",
+            "type": "quantitative",
+            "scale": {"scheme": "blues"}
+          },
+          "tooltip": [
+            {"field": "Year", "type": "ordinal"},
+            {"field": "Commodity", "type": "nominal"},
+            {"field": "total_value", "type": "quantitative", "title": "Value ($m)", "format": ".2f"}
+          ]
+        }
+      },
+      {
+        "title": "Area Chart",
+        "width": 400,
+        "height": 300,
+        "transform": [
+          {"filter": "datum.Type == type_selection"},
+          {"filter": "state_selection == null || datum.State == state_selection"},
+          {"filter": "datum.Year <= year_selection"},
+          {
+            "aggregate": [{
+              "op": "sum",
+              "field": "Value ($m)",
+              "as": "total_value"
+            }],
+            "groupby": ["Year", "Commodity"]
+          },
+          {"filter": "datum.total_value > 0.01"}
+        ],
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "Year", 
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "total_value",
+            "type": "quantitative",
+            "stack": true,
+            "axis": { "title": "Value ($m)" }
+          },
+          "color": {
+            "field": "Commodity", 
+            "type": "nominal",
+            "scale": {"scheme": "category10"}
+          },
+          "tooltip": [
+            {"field": "Year", "type": "ordinal"},
+            {"field": "Commodity", "type": "nominal"},
+            {"field": "total_value", "type": "quantitative", "title": "Value ($m)"
+            }
+          ]
+        }
+      }
+    ]
+  }
